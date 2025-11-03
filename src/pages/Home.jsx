@@ -17,6 +17,7 @@ import BackgroundMedia from "../components/background/Background.jsx";
 import bg_image from "../assets/images/bg-part2.jpg";
 import Navbar from "../components/navbar/Navbar.jsx";
 import PrizesSection from "../components/prizes/Prizes.jsx";
+import ShortlistedTeams from "../components/shortlistedTeams/ShortlistedTeams.jsx";
 
 export default function Home({ skipIntro = false }) {
   const [revealed, setRevealed] = useState(skipIntro);
@@ -87,6 +88,7 @@ export default function Home({ skipIntro = false }) {
           <div className="flex flex-col space-y-28 md:space-y-36 sm:space-y-40">
             <Lastyear />
             <AboutUS />
+            <ShortlistedTeams />
             <div className="flex flex-col gap-20 pt-6 pb-12">
             <Sponsors />
             </div>
